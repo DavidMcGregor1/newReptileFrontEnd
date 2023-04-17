@@ -26,6 +26,10 @@
     font-family: 'Outfit', sans-serif;
   }
 
+  .toPad {
+    padding-top: 5%;
+  }
+
   .makeWhite {
     color: white;
   }
@@ -94,7 +98,7 @@ a {
     transition: .4s;
   }
 
-  /*=============== NAV ===============*/
+  /*=============== HEADER ===============*/
 
 
 
@@ -131,4 +135,36 @@ a {
     position: relative;
     color: var(--first-color);
     transition: .3s;
+  }
+
+
+  /*=============== MEDIA QUERIES ===============*/
+
+  @media screen and (min-width: 968px) {
+    :root {
+      --h1-font-size: 2.25rem;
+      --normal-font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .nav__menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: var(--reptile-grey);
+      box-shadow: 0 -1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
+      width: 100%;
+      height: 4rem;
+      padding: 0 1rem;
+      display: grid;
+      align-content: center;
+      transition: .4s;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .nav__name {
+      display: none;
+    }
   }

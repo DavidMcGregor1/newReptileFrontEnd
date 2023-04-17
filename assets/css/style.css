@@ -16,3 +16,62 @@
     --z-tooltip: 10;
     --z-fixed: 100;
   }
+
+  /*=============== BASE ===============*/
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .makeWhite {
+    color: white;
+  }
+
+  .makeGreen {
+    color: var(--reptile-button);
+  }
+
+  .biggerFont {
+    font-size: large;
+    color: white;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--reptile-body);
+    color: var(--text-color);
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  p {
+    color: rgb(189, 180, 181);
+    font-weight: bolder;
+  }
+
+  
+a {
+    text-decoration: none;
+  }
+
+  .section__title {
+    font-size: var(--h1-font-size);
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .section__height {
+    height: 100vh;
+  }

@@ -168,3 +168,55 @@ a {
       display: none;
     }
   }
+
+  /* For medium devices */
+@media screen and (min-width: 576px) {
+    .nav__list {
+      justify-content: center;
+      column-gap: 3rem;
+    }
+  }
+
+  
+@media screen and (min-width: 767px) {
+    body {
+      margin: 0;
+    }
+    .section {
+      padding: 7rem 0 2rem;
+    }
+    .nav {
+      height: calc(var(--header-height) + 1.5rem); /* 4.5rem */
+    }
+    .nav__img {
+      display: none;
+    }
+    .nav__icon {
+      display: none;
+    }
+    .nav__name {
+      font-size: var(--normal-font-size);
+    }
+    .nav__link:hover {
+      color: var(--first-color);
+    }
+  
+    .active-link::before {
+      content: '';
+      position: absolute;
+      bottom: -.75rem;
+      width: 4px;
+      height: 4px;
+      background-color: var(--first-color);
+      border-radius: 50%;
+    }
+  
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  

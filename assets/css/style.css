@@ -94,6 +94,10 @@ a {
     transition: .4s;
   }
 
+  /*=============== NAV ===============*/
+
+
+
   .nav {
     height: var(--header-height);
     display: flex;

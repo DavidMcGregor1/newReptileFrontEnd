@@ -156,7 +156,7 @@ img {
 
 #nwDivId {
   position: relative;
-  top: 25%;
+  top: 18%;
   text-align: center;
 }
 
@@ -241,7 +241,30 @@ img {
   }
 }
 
+
+@media screen and (min-width: 600px) {
+
+  /* body {
+    background-color: pink;
+  } */
+
+  .homeText {
+    text-align: center;
+    font-size:x-large;
+  }
+  
+  :root {
+    --h1-font-size: 2.25rem;
+    --normal-font-size: 1rem;
+  }
+}
+
+
 @media screen and (max-width: 767px) {
+
+
+
+
   .nav__menu {
     position: fixed;
     bottom: 0;
